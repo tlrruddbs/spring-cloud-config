@@ -1,19 +1,15 @@
 spring:
-  h2:
-    console:
-      enabled: true
-      settings:
-        web-allow-others: true
-      path: /h2-console
-    datasource:
-      driver-class-name: org.h2.Driver
-      url: jdbc:h2:mem:testdb
-      username: '{cipher}f4064e73f21f2fd08591e697249509afd4b2234bfddce614e6e0b22ee3ee56dd'
-      password:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+
 
 token:
   expiration_time: 86400000
-#  secret: userServiceytewsecretakeydthatdsdlongdenoughdfordhs51211111111111ddyoure64rbytewsecretakeydthatdsdlongdenoughdfordhs5121111111111
-  secret: '{cipher}51735063144d751f3034df42f1f7e5955f1b16b40385ffcdc9320762626d7b67a24cbb833b3b82a4286233474f5591a15d4220ebabae939eea1b6f24a77099bf7f8b0b9b635ed01db2c468a4e9b50924151eaead0d76966557475934721ccee4e883aa1118e0bd45695583b540bd25b81536a291b5867b082ca7a3fb2f7a42f73db05982b094df875b804b01ab90ed388e679b6979390daf14440d2618717399'
+  secret: tttdddnative4rbytewsecretakeydthatdsdlongdenoughdfordhs51211111111111ddyoure64rbytewsecretakeydthatdsdlongdenoughdfordhs5121111111111
+#  secret: '{cipher}51735063144d751f3034df42f1f7e5955f1b16b40385ffcdc9320762626d7b67a24cbb833b3b82a4286233474f5591a15d4220ebabae939eea1b6f24a77099bf7f8b0b9b635ed01db2c468a4e9b50924151eaead0d76966557475934721ccee4e883aa1118e0bd45695583b540bd25b81536a291b5867b082ca7a3fb2f7a42f73db05982b094df875b804b01ab90ed388e679b6979390daf14440d2618717399'
 gateway:
   ip: 127.0.0.1
+target: user-service
